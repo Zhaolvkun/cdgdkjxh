@@ -1,0 +1,14 @@
+# 协会成果总表里有全量学生名单，仓库是公开的，绝对不能提交进来
+*.xlsx
+*.xls
+*.csv
+source-table.xlsx
+~$*
+
+# 哪天把照片挪回本目录暂存，也别让它进仓库
+协会照片*/
+
+# 系统生成的垃圾文件
+Thumbs.db
+Desktop.ini
+.DS_Store

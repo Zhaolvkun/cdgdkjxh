@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>加载中</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/data.js"></script>
+<script src="assets/posts.js"></script>
+<script src="assets/awards.js"></script>
+<script src="assets/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#works">跳到成果与荣誉</a>
+
+<header class="site-head">
+  <a class="brand" href="#top">
+    <span class="brand-mark" data-bind="shortName"></span>
+    <span class="brand-name" data-bind="name"></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="站内导航"></nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-logo" id="hero-logo"></div>
+    <p class="eyebrow" data-bind="school"></p>
+    <h1 class="tagline" data-bind="tagline"></h1>
+    <p class="lede" data-bind="intro"></p>
+    <p class="hero-links"><a class="btn" href="#works">看成果</a> <a class="btn btn-ghost" href="#events">活动与竞赛</a></p>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="section-title">关于我们</h2>
+    <div class="prose" id="about-body"></div>
+    <div id="advisors"></div>
+  </section>
+
+  <section class="section" id="notices">
+    <h2 class="section-title">通知公告</h2>
+    <ul class="notice-list" id="notice-list"></ul>
+    <p class="section-more" id="notice-more" hidden><a href="news.html">查看全部通知 →</a></p>
+    <p class="empty" id="notice-empty" hidden>还没有通知。在 <code>assets/posts.js</code> 里添加。</p>
+  </section>
+
+  <section class="section" id="events">
+    <h2 class="section-title">活动与竞赛</h2>
+    <ul class="event-list" id="events-list"></ul>
+    <p class="empty" id="events-empty" hidden>还没有活动记录。在 <code>assets/data.js</code> 的 <code>events</code> 里添加。</p>
+  </section>
+
+  <section class="section" id="works">
+    <h2 class="section-title">成果与荣誉</h2>
+    <p class="stat-line" id="award-stats"></p>
+    <div class="grid" id="works-grid"></div>
+    <h3 class="sub-title" id="featured-title" hidden>高规格奖项</h3>
+    <div class="grid" id="featured-grid"></div>
+    <p class="section-more" id="works-more" hidden><a href="achievements.html">查看全部获奖记录 →</a></p>
+    <p class="empty" id="works-empty" hidden>还没有成果记录。在 <code>assets/data.js</code> 的 <code>works</code> 里添加。</p>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2 class="section-title">协会掠影</h2>
+    <div class="grid" id="gallery-grid"></div>
+    <p class="empty" id="gallery-empty" hidden>还没有照片。在 <code>assets/data.js</code> 的 <code>gallery</code> 里添加。</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-info" id="foot-info"></div>
+  <p class="foot-copy"><span id="year"></span> · <span data-bind="name"></span> · <span data-bind="school"></span></p>
+</footer>
+</body>
+</html>

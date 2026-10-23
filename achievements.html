@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>成果清单 · 光电科技协会</title>
+<meta name="description" content="长春电子科技学院光电科技协会历年竞赛获奖与知识产权清单。">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/data.js"></script>
+<script src="assets/awards.js"></script>
+<script src="assets/main.js" defer></script>
+<script src="assets/ach.js" defer></script>
+</head>
+<body data-page-title="成果清单 · 光电科技协会">
+<a class="skip" href="#award-list">跳到清单</a>
+
+<header class="site-head">
+  <a class="brand" href="index.html">
+    <span class="brand-mark" data-bind="shortName"></span>
+    <span class="brand-name" data-bind="name"></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="站内导航"></nav>
+</header>
+
+<main id="top">
+  <section class="hero hero-slim">
+    <p class="eyebrow" data-bind="school"></p>
+    <h1 class="tagline">成果清单</h1>
+    <p class="lede" id="list-stats"></p>
+    <p class="note" id="list-note"></p>
+  </section>
+
+  <section class="section" id="ip">
+    <h2 class="section-title">科研与知识产权</h2>
+    <div id="ip-body"></div>
+  </section>
+
+  <section class="section" id="award-list">
+    <h2 class="section-title">竞赛获奖</h2>
+    <div id="year-groups"></div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <p class="foot-copy"><span id="year"></span> · <span data-bind="name"></span> · <span data-bind="school"></span> · <a href="index.html">返回首页</a></p>
+</footer>
+</body>
+</html>
